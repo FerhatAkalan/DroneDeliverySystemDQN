@@ -28,8 +28,7 @@ This project is an intelligent drone simulator that optimizes urban package deli
 - 🎮 **Interactive Simulation** with real-time animations  
 - 🎯 **Manual & AI Modes** - Control drone or watch AI performance
 - 💾 **Model Management** - Save/load trained neural networks (.pth format)
-- 🔋 **Battery System** with energy costs for different actions
-
+  
 ### 📊 Simulation Details
 - 🟢 **Cargo Depot**: Bottom-right corner where packages are picked up
 - 🔴 **Delivery Points**: Randomly placed target locations (1-3 per episode)
@@ -206,7 +205,6 @@ Bu proje, **Deep Q-Network (DQN)** algoritması kullanarak şehir içi paket tes
 - 🎮 **İnteraktif Simülasyon** gerçek zamanlı animasyonlarla
 - 🎯 **Manuel & AI Modları** - Drone kontrolü veya AI performansı izleme
 - 💾 **Model Yönetimi** - Eğitilmiş neural network'leri kaydetme/yükleme (.pth format)
-- 🔋 **Batarya Sistemi** farklı eylemler için enerji maliyetleri
 
 ### 📊 Simülasyon Detayları
 - 🟢 **Kargo Deposu**: Sağ alt köşede paketlerin alındığı merkez
@@ -242,8 +240,7 @@ python drone_delivery_system.py
 
 ### 🏗️ Neural Network Mimarisi
 - **Giriş Katmanı**: 12 nöron (durum vektörü)
-- **Gizli Katman 1**: 128 nöron + ReLU + Dropout(0.2)
-- **Gizli Katman 2**: 128 nöron + ReLU
+- **Gizli Katman**: 128 nöron + ReLU + Dropout(0.2)
 - **Çıkış Katmanı**: 6 nöron (Q-değerleri)
 
 ### 📊 Durum Temsili (12 Boyutlu Vektör)
